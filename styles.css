@@ -69,14 +69,14 @@
 	margin: 10px 0 0 0;
 	display: flex;
 	line-height: 1.6;
-	max-width: 600px;
 	letter-spacing: 0.48px;  
 }
 
 .text-about{
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48;
+	letter-spacing: 0.48px;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 .button{
@@ -109,7 +109,7 @@
 .years{
 	font-weight: 300;
 	line-height: 1.5;
-	letter-spacing: 0.48;
+	letter-spacing: 0.48px;
 }
 
 .about-img{
@@ -127,23 +127,30 @@
 
 .about-pharagraph{
 	display: flex;
-	max-width: 400px;
 	justify-content: space-between;
 	font-size: 12px;
+}
+
+.about1{
+	max-width: 400px;
+}
+
+.experience{
+    max-width: 400px;
 }
 
 .subtitle-experience{
 	font-size: 12px;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48;
+	letter-spacing: 0.48px;
 }
 
 .link-cv{
 	color: #000000;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 0.48;
+	letter-spacing: 0.48px;
 }
 
 .view{
@@ -200,6 +207,7 @@
 
 .inputs{
 	flex-direction: column;
+	text-align: center;
 }
 
 .input{
@@ -209,17 +217,16 @@
 
 .text{
 	text-align: center;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 .button-send{
-	display:flex;
-	margin: 0 auto;
+	margin: 40px auto 0;
 	width: 212px;
 	height: 41px;
 	border-radius: 20.2px;
 	background-color: #000000;
     color: #ffffff;
-    text-align: center;
     letter-spacing:2.87px;
     text-transform: uppercase;
     font-weight: 600;
@@ -234,16 +241,17 @@
 
 .textarea{
 	margin: 20px 0 0 20px;
+	height: 150px;
 }
 
 .input, .textarea{
 	width: 360px;
-	color: #000000;
+	color: rgba(0, 0, 0, 0.7);
 	font-weight: 600;
 	font-size: 12px;
-	letter-spacing: 2.16;
+	letter-spacing: 2.16px;
 	text-transform: uppercase;
 	line-height: 2.8;
 	border: none;
-	border-bottom: 5px solid black;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.7);
 }
