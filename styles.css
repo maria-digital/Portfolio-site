@@ -1,5 +1,27 @@
+@font-face {
+	src: url('fonts/PoppinsReg.ttf');
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+@font-face {
+	src: url('fonts/PoppinsLight.ttf');
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+@font-face {
+	src: url('fonts/PoppinsSem.ttf');
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
 .title{
 	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 1.2;
+	letter-spacing: 4.78px;
 }
 
 .links{
@@ -9,6 +31,10 @@
 	width: 400px;
 	padding: 0;
 	list-style: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	line-height: 2.8;
+	letter-spacing: 2.87px;
 }
 
 .link{
@@ -23,15 +49,34 @@
 
 .subtitle{
 	font-size: 20px;  
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 0.9;
+	letter-spacing: 2px;
 }
 
+.header {
+	position: relative;
+}
 .header-name{
 	margin: 150px 0 0 0;
+	position: absolute;
+	left: 34px;
 }
 
 .about{
 	font-size: 12px;
 	margin: 10px 0 0 0;
+	display: flex;
+	line-height: 1.6;
+	letter-spacing: 0.48px;  
+}
+
+.text-about{
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 .button{
@@ -42,6 +87,10 @@
 	background: transparent;
 	border-radius: 20.2px;
 	padding: 16px 43px 16px 42px;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 2.8;
+	letter-spacing: 2.87px;
 }
 
 .header{
@@ -50,9 +99,17 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+	
+.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: 'Poppins', sans-serif;
+}
 
-.about{
-	display: flex;
+.years{
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
 }
 
 .about-img{
@@ -62,21 +119,42 @@
 
 .subtitle-text{
 	font-size: 12px;
+	text-transform: lowercase;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 2px;
 }
 
 .about-pharagraph{
 	display: flex;
-	max-width: 400px;
 	justify-content: space-between;
 	font-size: 12px;
 }
 
+.about1{
+	max-width: 400px;
+}
+
+.experience{
+    max-width: 400px;
+}
+
 .subtitle-experience{
 	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
 }
 
 .link-cv{
 	color: #000000;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.48px;
+}
+
+.view{
+	text-decoration: none;
 }
 
 .container-work{
@@ -101,7 +179,79 @@
 	height: 234px;
 }
 
+.work-2{
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 3px;
+}
 
-	
+.portfolio-item {
+	position: relative;
+}
 
+.portfolio-item::before {
+	content: '';
+	background: rgba(255, 255, 255, 0.5);
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+}
 
+.portfolio-item-text {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.inputs{
+	flex-direction: column;
+	text-align: center;
+}
+
+.input{
+	display:flex;
+	margin: 10px 20px 10px 0;
+}
+
+.text{
+	text-align: center;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.button-send{
+	margin: 40px auto 0;
+	width: 212px;
+	height: 41px;
+	border-radius: 20.2px;
+	background-color: #000000;
+    color: #ffffff;
+    letter-spacing:2.87px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px
+    line-height: 2.8;
+    }
+
+.form-container{
+	display: flex;
+	justify-content: center
+}
+
+.textarea{
+	margin: 20px 0 0 20px;
+	height: 150px;
+}
+
+.input, .textarea{
+	width: 360px;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 2.16px;
+	text-transform: uppercase;
+	line-height: 2.8;
+	border: none;
+	border-bottom: 5px solid rgba(0, 0, 0, 0.7);
+}
