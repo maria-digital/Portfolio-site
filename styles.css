@@ -27,6 +27,17 @@
 	}
 }
 
+@keyframes sendAnimation{
+	0%{
+		background-color: #000000;
+        color: #ffffff;
+	}
+	100%{
+		background: transparent;
+		color: #000000;
+	}
+}
+
 @keyframes fotoRotate{
 	0%{
 		transform: rotateY(0);
@@ -83,7 +94,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 	line-height: 0.9;
-	letter-spacing: 2px;
+	letter-spacing: 2.7px;
 }
 
 .header {
@@ -91,7 +102,7 @@
 }
 
 .header-name{
-	margin: 140px 0 0 0;
+	margin: 142px 0 0 0;
 	position: absolute;
 	left: 34px;
 }
@@ -101,7 +112,7 @@
 	margin: 30px 0 0 0;
 	display: flex;
 	line-height: 1.6;
-	letter-spacing: 0.48px;  
+	letter-spacing: 0.6px; 
 	max-width: 400px;
 }
 
@@ -115,11 +126,11 @@
 	letter-spacing: 0.48px;
 	color: rgba(0, 0, 0, 0.7);
 	width: 340px;
-	margin: 15px 0 30px 0;
+	margin: 22px 0 0 0;
 }
 
 .container-text{
-	margin: 40px 0 0 25px;
+	margin: 35px 0 0 25px;
 }
 
 .container-about{
@@ -145,7 +156,11 @@
 }
 
 .button:hover{
-	animation: buttonAnimation 3s 1 ease-in-out;
+	animation: buttonAnimation 1s 1 ease-in-out;
+}
+
+.button:focus{
+	cursor: pointer;
 }
 
 .header{
@@ -165,6 +180,8 @@
 	font-weight: 300;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
+	margin: 0 0 15px 0;
+	display: block;
 }
 
 .about-img{
@@ -182,14 +199,19 @@
 	text-transform: lowercase;
 	font-weight: 600;
 	line-height: 1.5;
-	letter-spacing: 2px;
+	letter-spacing: 0.5px;
 }
 
-.about-pharagraph{
+.about-paragraph{
 	display: flex;
 	justify-content: space-between;
 	font-size: 12px;
-	margin: 0 0 0 50px;
+	margin: 0 0 0 42px;
+}
+
+.about-paragraph-work{
+	margin: 65px 0 0 42px;
+	max-width: 684px;
 }
 
 .about1{
@@ -197,22 +219,23 @@
 	width: 400px;
 }
 
-.experience{
-    max-width: 400px;
-    margin: 40px 0 0 0;
-}
-
 .subtitle-experience{
 	font-size: 12px;
 	font-weight: 600;
-	line-height: 1.5;
+	line-height: 1.6;
 	letter-spacing: 0.48px;
-	max-width: 250px;
+	max-width: 260px;
 	padding: 5px 0 0 0;
+	margin: 0 0 5px;
+}
+
+.subtitle-experience-projects{
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
 
 .experience3{
-    margin: 80px 0 0 0;
+    margin: 52px 0 0 0;
 }
 
 .link-cv{
@@ -220,7 +243,9 @@
 	font-weight: 600;
 	line-height: 1.5;
 	letter-spacing: 0.48px;
-	padding: 0 0 0 35px;
+	padding: 13px 0 0 0;
+	display: block;
+	font-size: 13px;
 }
 
 .view{
@@ -242,7 +267,7 @@
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
-	padding: 20px 20px 60px 25px;
+	padding: 24px 20px 66px 25px;
 }
 
 .work-img{
@@ -254,7 +279,7 @@
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.2;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 .portfolio-item {
@@ -286,9 +311,12 @@
 
 .portfolio-item-text {
 	position: absolute;
-	bottom: 0;
+	bottom: 13px;
 	width: 100%;
 	opacity: 0;
+	padding: 0 0 0 38px;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 .inputs{
@@ -305,7 +333,12 @@
 .text{
 	text-align: center;
 	color: rgba(0, 0, 0, 0.7);
-	margin: 45px 0 60px 0;
+	margin: 40px 0 65px 0;
+	font-size: 13px;
+}
+
+.text:focus{
+	outline: none;
 }
 
 .button-send{
@@ -318,17 +351,28 @@
     letter-spacing:2.87px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 12px
+    font-size: 12px;
     line-height: 2.8;
     }
 
+ .button-send:hover{
+    outline: none;
+    animation: sendAnimation 1s 1 ease-in-out;
+    }
+
+.button-send:focus{
+	cursor: pointer;
+}
+
 .form-container{
 	display: flex;
-	justify-content: center
+	justify-content: space-between;
+	max-width: 772px;
+	margin: 0 auto;
 }
 
 .textarea{
-	margin: 5px 0 0 20px;
+	margin: 5px 0 0 45px;
 	height: 160px;
 }
 
@@ -339,7 +383,7 @@
 	font-size: 12px;
 	letter-spacing: 2.16px;
 	text-transform: uppercase;
-	line-height: 2.8;
+	line-height: 2.6;
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.7);
 }
