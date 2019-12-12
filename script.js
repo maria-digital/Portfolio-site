@@ -6,9 +6,9 @@ var y = prompt("Введите число 2", 50);
 
 console.log(y);
 
-x = parseInt("23", 10);
+x = parseInt(x, 10);
 
-y = parseInt("50", 10);
+y = parseInt(y, 10);
 
 
 var sum = x+y;
