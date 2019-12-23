@@ -1,50 +1,33 @@
-//for ( i = 0; i < 3; i++) {
-//	console.log(i);
-//}
-
-//var myName = document.getElementById("name");
-//console.log(myName);
-
-/*var form = document.getElementById("form");
-
 function validate(event) {
 	event.preventDefault();
+
 	var myName = document.getElementById("name");
-	var myNameValue = myName && myName.value;
+	checkInput(myName);
 	var myEmail = document.getElementById("email");
-	var myEmailValue = myEmail && myEmail.value;
+	checkInput(myEmail);
 	var mySubject = document.getElementById("subject");
-	var mySubjectValue = mySubject && mySubject.value;}
+	checkInput(mySubject);
+	var myText = document.getElementById("text");
+	checkInput(myText);
+}
 
 
-function checkForm(form) {
+
+function checkInput(input) {
 	
-	var myForm = document.querySelectorAll(".check-form");
-	var myFormValue = myForm && myForm.value;
-	if (myFormValue === '') {
-		myForm.style.borderBottom = '3px solid red';
-	} else { 
-		myForm.style.borderBottom = '3px solid rgba(0, 0, 0, 0.3)';
-		}
-	}
-	
+	var value = input && input.value;
+	var message = "Спасибо, Ваша заявка отправлена";
 
-form.addEventListener('submit', validate);
-*/
-
-
-var form = document.getElementById("form");
-
-function validate(event) {
-	event.preventDefault();
-	var myName = document.getElementById("name");
-	var myNameValue = myName && myName.value;
-
-	if (myNameValue === '') {
-		myName.style.borderBottom = '3px solid red';
+	if (value === '') {
+		input.style.borderBottom = '3px solid red';
 	} else {
-		myName.style.borderBottom = '3px solid rgba(0, 0, 0, 0.3)';
+		input.style.borderBottom = '3px solid rgba(0, 0, 0, 0.3)';
+
+    alert(message)
 	}
 }
 
+var form = document.getElementById("form");
+
 form.addEventListener('submit', validate);
+
