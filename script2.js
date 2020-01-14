@@ -9,6 +9,11 @@ function validate(event) {
 	checkInput(mySubject);
 	var myText = document.getElementById("text");
 	checkInput(myText);
+	
+	if (checkInput(myName) && checkInput(myEmail) && checkInput(mySubject) && checkInput(myText)) {
+	var message = "Спасибо, Ваша заявка отправлена";
+	alert(message);
+	}
 }
 
 
@@ -16,14 +21,13 @@ function validate(event) {
 function checkInput(input) {
 	
 	var value = input && input.value;
-	var message = "Спасибо, Ваша заявка отправлена";
 
 	if (value === '') {
 		input.style.borderBottom = '3px solid red';
+		return false;
 	} else {
 		input.style.borderBottom = '3px solid rgba(0, 0, 0, 0.3)';
-
-    alert(message)
+		return true;
 	}
 }
 
