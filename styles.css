@@ -387,3 +387,9 @@
 	border: none;
 	border-bottom: 5px solid rgba(0, 0, 0, 0.3);
 }
+
+.message {
+	color: rgba(0, 255, 0);
+	font-size: 20px;
+	font-weight: 600;
+}

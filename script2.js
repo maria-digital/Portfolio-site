@@ -9,10 +9,11 @@ function validate(event) {
 	checkInput(mySubject);
 	var myText = document.getElementById("text");
 	checkInput(myText);
-	
+
+		
 	if (checkInput(myName) && checkInput(myEmail) && checkInput(mySubject) && checkInput(myText)) {
-	var message = "Спасибо, Ваша заявка отправлена";
-	alert(message);
+	
+	var message = document.getElementById("message").innerHTML = "Спасибо, Ваша заявка отправлена!";
 	}
 }
 
