@@ -1,5 +1,13 @@
 # Portfolio
 
+Landing page "Portfolio"
+
+Technologies used:
++ Responsive layout with PixelPerfect.
++ html, css, JavaScript.
++ Styling form.
++ Animation.
+
 Лэндинг-портфолио
 
 Использованные технологии:
@@ -10,5 +18,5 @@
 
 
 ** **
-[Ссылка на готовый проект]( maria-digital.github.io/portfolio-site/)
+[Link to the finished project]( maria-digital.github.io/portfolio-site/)
 
