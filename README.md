@@ -8,6 +8,8 @@ Technologies used:
 + Styling form.
 + Animation.
 
+** **
+
 Лэндинг-портфолио
 
 Использованные технологии:
